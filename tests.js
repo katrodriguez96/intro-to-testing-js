@@ -13,3 +13,18 @@ describe('helloWorld', function() {
       expect(helloWorld()).not.toBe(undefined);
     });
 });
+
+describe('sayHello Unit Tests', function() {
+    it('should be a defined function', function () {
+        expect(sayHello).toBeDefined();
+    });
+    it('should return a string when called', function () {
+        expect(typeof sayHello()).toBe("string");
+    });
+    it('should return "Hello!" when no arguments are passed', function () {
+        expect(sayHello()).toBe("Hello!");
+    });
+    it('should return "Hello, Kat!" when called with argument "Kat"', function () {
+        expect(sayHello("Kat")).toBe("Hello, Kat!");
+    });
+});
