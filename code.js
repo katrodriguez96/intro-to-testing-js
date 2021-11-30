@@ -6,7 +6,9 @@ function helloWorld() {
 function sayHello(name) {
     if (name) {
         return "Hello, " + name + "!";
+    } else if (name === true) {
+        return "Hello, World!";
     } else {
-        return "Hello!";
+        return "Hello, World!";
     }
 }
